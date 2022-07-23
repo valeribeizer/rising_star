@@ -6,6 +6,7 @@ import Banner from './components/Banner';
 import AboutUs from './components/AboutUs';
 import Member from './components/Member';
 import  Prices from './components/Prices';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutUs />
       <Prices />
       <Member />
+      <Footer />
     </div>
   );
 }
