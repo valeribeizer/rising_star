@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { scroller } from "react-scroll";
 import bannerImg from '../assets/img/banner_img1.png';
 
 const Banner = () => {
@@ -7,6 +8,14 @@ const Banner = () => {
   const [text, setText] = useState("");
   const period = 300;
 
+  const scrollToSection = () => {
+    scroller.scrollTo("member", {
+      duration: 300,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -50,
+    });
+  };
 
   useEffect(() => {
       let  ticker = setInterval(() => {
@@ -39,9 +48,7 @@ const Banner = () => {
               play, train and compete. With the sport we want to provide
               physical, mental, social and cultural development.
             </p>
-            <button onClick={<a href="localhost:3000/#member" />}>
-              Become a member
-            </button>
+              <button onClick={scrollToSection}>Become a member</button>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={bannerImg} alt="header gymnasts" />

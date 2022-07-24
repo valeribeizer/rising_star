@@ -10,7 +10,7 @@ const NavBar = () => {
     };
 
   return (
-     <Navbar expand='lg'>
+    <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -48,15 +48,7 @@ const NavBar = () => {
             >
               Prices
             </Nav.Link>
-            <Nav.Link
-              href="#contacts"
-              className={
-                activeLink === "contacts" ? "active-navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("contacts")}
-            >
-              Contacs
-            </Nav.Link>
+
             <Nav.Link
               href="#member"
               className={
@@ -65,6 +57,15 @@ const NavBar = () => {
               onClick={() => onUpdateActiveLink("member")}
             >
               Become a Member
+            </Nav.Link>
+            <Nav.Link
+              href="#contacts"
+              className={
+                activeLink === "contacts" ? "active-navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("contacts")}
+            >
+              Contacs
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
