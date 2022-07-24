@@ -7,6 +7,7 @@ const Banner = () => {
   const [text, setText] = useState("");
   const period = 300;
 
+
   useEffect(() => {
       let  ticker = setInterval(() => {
           tick();
@@ -38,7 +39,7 @@ const Banner = () => {
               play, train and compete. With the sport we want to provide
               physical, mental, social and cultural development.
             </p>
-            <button onClick={() => console.log("connect")}>
+            <button onClick={<a href="localhost:3000/#member" />}>
               Become a member
             </button>
           </Col>

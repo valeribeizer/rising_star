@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
 };
 
 return (
-  <section className="member" id="member">
+  <section className="member" id="member" >
     <Container>
       <Row className="align-items-center">
         <Col size={12} md={6}>

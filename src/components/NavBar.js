@@ -1,31 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.png';
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
-    // const [scrolled, setScrolled] = useState(false);
-
-    // useEffect(() => {
-    //     const onScroll = () => {
-    //         if (window.screenY > 50) {
-    //             setScrolled(true);
-    //         } else {
-    //             setScrolled(false);
-    //         }
-    //     }
-
-    //     window.addEventListener('scroll', onScroll);
-
-    //     return () => window.removeEventListener('scroll', onScroll);
-    // }, []);
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     };
 
   return (
-  //   <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
      <Navbar expand='lg'>
       <Container>
         <Navbar.Brand href="#home">
@@ -35,9 +19,6 @@ const NavBar = () => {
             alt="logo"
           />
         </Navbar.Brand>
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon" />
-        </Navbar.Toggle> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
@@ -49,15 +30,6 @@ const NavBar = () => {
             >
               Home
             </Nav.Link>
-            {/* <Nav.Link
-              href="#schedule"
-              className={
-                activeLink === "schedule" ? "active-navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("schedule")}
-            >
-              Schedule
-            </Nav.Link> */}
             <Nav.Link
               href="#aboutus"
               className={

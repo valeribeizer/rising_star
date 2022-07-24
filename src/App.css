@@ -66,7 +66,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
-  background: linear-gradient(90.21deg, #ffd6ef -5.91%,    #7ab3fd 111.58%);
+  background: linear-gradient(90.21deg, #7ab3fd  -5.91%,     #ffd6ef 111.58%);
   height: 90px;  
 }
 
@@ -305,6 +305,53 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border-radius: 0 55px 55px 0;
 }
 
+.about button {
+  font-weight: 700;
+  color: #000;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  width: 200px; 
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-left: 360px;
+  border-radius: 0px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.about button span {
+  z-index: 1;
+  position: relative;
+}
+
+.about button:hover {
+  color: #fff;
+}
+
+.about button::before {
+  content: "";
+  background: linear-gradient(
+    90.21deg,
+      rgba(74, 47, 189, 0.5) -5.91%,
+    rgba(170, 54, 124, 0.5) 111.58%
+  );
+  width: 0;
+  height: 100%;
+  border-radius: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.about button:hover::before {
+  width: 100%;
+}
+
 /* Member CSS */
 .member {
   padding-top: 105px;
@@ -429,51 +476,41 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .prices-slider {
   width: 80%;
-  margin: 0 auto;
+  margin: auto auto;
   padding-top: 35px;
   padding-bottom: 55px;
   position: relative;
 }
 
 .prices .card {
-  margin-left: 15px;
+  width: 250px;
+  
   background-color: rgb(255 255 255 / 10%);
   border-radius: 50px;  
 }
 
-.prices-slider .carousel.custom-right-arrow {
-  /* position: absolute !important; */
-  margin-right: -40px;
+/* Arrows CSS */
+
+.custom-right-arrow {
+  position: absolute !important;
+  margin-right: -20px;
   right: 30px;
   z-index: 1;
-  border: 1px solid grey;
+  border: 1px solid #892eff;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 6px;
-  opacity: 0.8;
+  opacity: 0.6;
   cursor: pointer;
   transform: rotate(-45deg);
 }
 
-.prices .custom-right-arrow:hover {
+.custom-right-arrow:hover {
   opacity: 1;
 }
 
-.prices .custom-left-arrow {
-  position: absolute !important;
-  left: 30px;
-  z-index: 1;
-  border: 1px solid grey;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 6px;
-  opacity: 0.8;
-  cursor: pointer;
-  transform: rotate(135deg);
-}
-
-.prices .custom-left-arrow:hover {
-  opacity: 1;
+.custom-left-arrow {
+  border: none;
 }
 
 /* Contacts CSS */

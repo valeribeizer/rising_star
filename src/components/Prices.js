@@ -1,5 +1,7 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
+import CustomRightArrow from './CustomRightArrow';
+import CustomLeftArrow from './CustomLeftArrow';
 import 'react-multi-carousel/lib/styles.css';
 
 const  Prices = () => {
@@ -33,8 +35,9 @@ const  Prices = () => {
                 <Carousel
                   responsive={responsive}
                   infinite={true}
-                  removeArrowOnDeviceType={["desktop"]}
                   className="prices-slider"
+                  customRightArrow={<CustomRightArrow />}
+                  customLeftArrow={<CustomLeftArrow />}
                 >
                   <Card>
                     <Card.Body>

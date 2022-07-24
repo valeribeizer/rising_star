@@ -1,7 +1,12 @@
 import { Nav, Col, Row, Container, Tab, Card } from "react-bootstrap";
-import GoogleDocsViewer from "react-google-docs-viewer";
 
 const AboutUs = () => {
+  const buttonClicked = () => {
+    const url =
+      "https://drive.google.com/file/d/1K0iqY3V7CjfHwNzqi2a_UkFsEahrRnzV/view?usp=sharing";
+    window.open(url, '_blank');
+}
+
   return (
     <section className="about" id="aboutus">
       <Container>
@@ -47,7 +52,7 @@ const AboutUs = () => {
                           gymnasts and everyone else involved in relation to
                           each other, the sport and the outside world. In this
                           way, all our activities develop into a community that
-                          creates joy and well-being. 
+                          creates joy and well-being.
                         </p>
                       </Row>
                     </Card.Body>
@@ -57,12 +62,9 @@ const AboutUs = () => {
                   <Card>
                     <Card.Body>
                       <Row>
-                        <GoogleDocsViewer
-                          align="center"
-                          width="600px"
-                          height="780px"
-                          fileUrl="https://docs.google.com/document/d/1liMJEFKnmMD5wvZZnfQDTbg4U7NwdaY2eOuWjVEug2E"
-                        />
+                        <button onClick={buttonClicked}>
+                          Click here!
+                        </button>
                       </Row>
                     </Card.Body>
                   </Card>
