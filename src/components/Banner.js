@@ -17,10 +17,10 @@ const Banner = () => {
       }
   }, [text]);
 
- const tick = () => {
-   let updatedText = toRotate.substring(0, text.length + 1);
-   setText(updatedText);
- };
+     const tick = () => {
+       let updatedText = toRotate.substring(0, text.length + 1);
+       setText(updatedText);
+     };
 
   return (
     <section className="banner" id="home">
@@ -43,7 +43,7 @@ const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={bannerImg} alt="header image" />
+            <img src={bannerImg} alt="header gymnasts" />
           </Col>
         </Row>
       </Container>

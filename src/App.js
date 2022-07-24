@@ -5,8 +5,9 @@ import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import AboutUs from './components/AboutUs';
 import Member from './components/Member';
-import  Prices from './components/Prices';
+import Prices from './components/Prices';
 import Footer from './components/Footer';
+import Contacts from './components/Contacts';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutUs />
       <Prices />
       <Member />
+      <Contacts />
       <Footer />
     </div>
   );

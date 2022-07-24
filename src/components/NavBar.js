@@ -4,28 +4,29 @@ import logo from '../assets/img/logo.png';
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
-    const [scrolled, setScrolled] = useState(false);
+    // const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const onScroll = () => {
-            if (window.screenY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        }
+    // useEffect(() => {
+    //     const onScroll = () => {
+    //         if (window.screenY > 50) {
+    //             setScrolled(true);
+    //         } else {
+    //             setScrolled(false);
+    //         }
+    //     }
 
-        window.addEventListener('scroll', onScroll);
+    //     window.addEventListener('scroll', onScroll);
 
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
+    //     return () => window.removeEventListener('scroll', onScroll);
+    // }, []);
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     };
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+  //   <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+     <Navbar expand='lg'>
       <Container>
         <Navbar.Brand href="#home">
           <img

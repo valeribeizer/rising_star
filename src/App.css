@@ -35,7 +35,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: white !important;
+  background: linear-gradient(90.21deg, #ffd6ef -5.91%,    #7ab3fd 111.58%) !important;
   color: rgb(0, 0, 0) !important;
   font-family: "Centra", sans-serif !important;
 }
@@ -57,62 +57,18 @@ img {
   position: relative;
 }
 
-/* .App {
-  text-align: center;
-} */
-
-/* .App-logo {
-  height: 20vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 /* NavBar  CSS  */
 nav.navbar {
-  padding: 18px 0;
+  margin-bottom: 50px;
+  /* padding: 18px 0; */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
-  background: linear-gradient(90.21deg, #7ab3fd -5.91%,   #ffd6ef 111.58%);
-  height: 90px;
-  
+  background: linear-gradient(90.21deg, #ffd6ef -5.91%,    #7ab3fd 111.58%);
+  height: 90px;  
 }
-
-/* nav.navbar.scrolled {
-  margin-bottom: 100px;
-  background: #85fbff;
-} */
 
 nav.navbar a.navbar-brand {
   width: 25%;
@@ -131,11 +87,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
-
-/* span.navbar-text {
-    display: flex;
-    align-items: center;
-} */
 
 .navbar-text button {
   font-weight: 700;
@@ -170,57 +121,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-} */
-/* nav.navbar .navbar-toggler:active,
-nav.navbar .navbar-toggler:focus {
-	outline: none;
-    box-shadow: none;
-}
-nav.navbar .navbar-toggler-icon {
-  width: 24px;
-  height: 17px;
-  background-image: none;
-  position: relative;
-  border-bottom: 2px solid #fff;
-  transition: all 300ms linear;
-  top: -2px;
-}
-nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
-}
-nav.navbar .navbar-toggler-icon:after,
-nav.navbar .navbar-toggler-icon:before {
-	width: 24px;
-	position: absolute;
-	height: 2px;
-	background-color: #fff;
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: 2;
-	transition: all 300ms linear;
-}
-nav.navbar .navbar-toggler-icon:after {
-	top: 8px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
-	background-color: #fff;
-	height: 2px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
-	height: 2px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
-} */
+} 
 
 /*Banner CSS */
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
+  /* margin-top: 0px; */
+  padding-top: 250px;
+  height: 770px;
   background-image: url("./assets/img/banner_back2.jpg");
   background-position: top center;
   background-size: cover;
@@ -282,7 +189,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
-@keyframes updown {
+/* @keyframes updown {
   0% {
     transform: translateY(-20px);
   }
@@ -292,16 +199,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   100% {
     transform: translateY(-20px);
   }
-}
+} */
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
 /* AboutUs CSS */
 .about {
-  padding: 80px 0;
+  padding-top: 105px;
   position: relative;
-  background: linear-gradient(90.21deg, #ffd6ef -5.91%, #7ab3fd 111.58%);
 }
 
 .about h2 {
@@ -400,8 +307,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Member CSS */
 .member {
-  background: linear-gradient(90.21deg, #ffd6ef -5.91%, #7ab3fd 111.58%);
-  padding: 60px 0 200px 0;
+  padding-top: 105px;
 }
 .member img {
   width: 400px;
@@ -454,13 +360,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   transition: 0.3s ease-in-out;
 }
+
 .member form button span {
   z-index: 1;
   position: relative;
 }
+
 .member form button:hover {
   color: #fff;
 }
+
 .member form button::before {
   content: "";
   background: linear-gradient(
@@ -483,17 +392,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Prices CSS */
 .prices {
-  padding-bottom: 50px;
   position: relative;
-  background:  linear-gradient(90.21deg, #ffd6ef -5.91%, #7ab3fd 111.58%);
+  padding-top: 105px;
 }
+
 .prices-bx {
-  background: rgba(148, 83, 252, 0.219);
+  background: rgba(131, 139, 250, 0.795);
   border-radius: 64px;
   text-align: center;
   padding: 40px 50px;
   margin-top: 50px;
 }
+
+.prices h1 {
+	text-align: center;
+}
+
 .prices h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -512,6 +426,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     line-height: 1.5em;
     text-align: center;
 }
+
 .prices-slider {
   width: 80%;
   margin: 0 auto;
@@ -526,24 +441,88 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 50px;  
 }
 
+.prices-slider .carousel.custom-right-arrow {
+  /* position: absolute !important; */
+  margin-right: -40px;
+  right: 30px;
+  z-index: 1;
+  border: 1px solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  opacity: 0.8;
+  cursor: pointer;
+  transform: rotate(-45deg);
+}
 
-/* .background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-} */
+.prices .custom-right-arrow:hover {
+  opacity: 1;
+}
 
+.prices .custom-left-arrow {
+  position: absolute !important;
+  left: 30px;
+  z-index: 1;
+  border: 1px solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  opacity: 0.8;
+  cursor: pointer;
+  transform: rotate(135deg);
+}
+
+.prices .custom-left-arrow:hover {
+  opacity: 1;
+}
+
+/* Contacts CSS */
+.contacts {
+  position: relative;
+  padding: 105px 0 105px 0;
+}
+
+.contacts .col {
+  margin-top: 20px;
+}
+
+.contacts-bx {
+  background: rgba(131, 139, 250, 0.795);
+  border-radius: 64px;
+  text-align: center;
+  padding: 20px 50px;
+  margin-top: 30px;;
+  margin-bottom: 50px;
+}
+
+.contacts h1 {
+  text-align: center;
+}
+
+.contacts h2 {
+	font-size: 25px;
+	font-weight: 500;
+  text-align: center;
+}
+
+.contacts p {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    line-height: 1.0em;
+    text-align: center;
+}
+
+
+/* Footer CSS */
  .footer {
-  background: linear-gradient(90.21deg, #7ab3fd -5.91%,   #ffd6ef 111.58%);
   height: 100px;
  }
 
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #a2bafc;
+  color: #ffd6ef;
   letter-spacing: 0.5px;
   margin-top: 10px;
 } 

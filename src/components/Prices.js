@@ -25,14 +25,15 @@ const  Prices = () => {
     return (
       <section className="prices" id="prices">
         <Container>
+          <h1>Prices</h1>
           <Row>
             <Col>
               <div className="prices-bx">
-                <h1>Prices</h1>
                 <p>These prices are valid for autumn term</p>
                 <Carousel
                   responsive={responsive}
                   infinite={true}
+                  removeArrowOnDeviceType={["desktop"]}
                   className="prices-slider"
                 >
                   <Card>
@@ -83,7 +84,8 @@ const  Prices = () => {
                   week without additional fees.
                 </h5>
                 <h5>
-                  Also you get discount 10% if more than 1 girl does gymnastics in our club.
+                  Also you get discount 10% if more than 1 girl does gymnastics
+                  in our club.
                 </h5>
               </div>
             </Col>
