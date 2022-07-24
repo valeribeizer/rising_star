@@ -60,6 +60,7 @@ img {
 /* NavBar  CSS  */
 nav.navbar {
   margin-bottom: 50px;
+  padding-left: 80px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -70,7 +71,7 @@ nav.navbar {
 }
 
 nav.navbar a.navbar-brand {
-  width: 25%;
+  width: 45%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -98,9 +99,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+
 .navbar-text button span {
   z-index: 1;
 }
+
 .navbar-text button::before {
   content: "";
   width: 0%;
@@ -112,9 +115,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 .navbar-text button:hover {
   color: #121212;
 }
+
 .navbar-text button:hover::before {
 	content: "";
 	width: 100%;
@@ -124,7 +129,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 /*Banner CSS */
 .banner {
-  /* margin-top: 0px; */
   padding-top: 250px;
   height: 770px;
   background-image: url("./assets/img/banner_back2.jpg");
@@ -327,6 +331,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
+
 .about button:hover::before {
   width: 100%;
 }
@@ -358,19 +363,23 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
+
 .member form input:focus, .member form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
+
 .member form input::placeholder, .member form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
+
 .member form input:focus::placeholder, .member form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
 }
+
 .member form button {
   font-weight: 700;
   color: #000;
