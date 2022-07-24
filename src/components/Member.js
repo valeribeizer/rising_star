@@ -13,36 +13,15 @@ const Member = () => {
     message: "",
   };
 
+  const [buttonText, setButtonText] = useState("Send");
+  const [formDetails, setFormDetails] = useState(formInitialDetails);
+
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
       [category]: value,
     });
   };
-
-  const [buttonText, setButtonText] = useState("Send");
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-
-  // const sendEmail = (e) => {
-  //       e.preventDefault();
-  //       emailjs
-  //         .sendForm(
-  //           "service_s5hiexk",
-  //           "template_ni0imaa",
-  //           e.target,
-  //           "g3lRXYQqlKOkmc1vN"
-  //         )
-  //         .then(
-  //           (result) => {
-  //             console.log(result.text);
-  //           },
-  //           (error) => {
-  //             console.log(error.text);
-  //           }
-  //         );
-  //         e.target.reset();
-  //         setButtonText("Sent 🤗");
-  // };
 
   const sendEmail = (e) => {
     e.preventDefault();
