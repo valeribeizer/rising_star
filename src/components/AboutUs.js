@@ -12,8 +12,8 @@ const AboutUs = () => {
       <Container>
         <Row>
           <Col>
-            <h2>About Us</h2>
-            <h5>Our club was founded in 2022 year</h5>
+            <h1>About Us</h1>
+            <h2>Our club was founded in 2022 year</h2>
             <Tab.Container id="aboutUs-tabs" defaultActiveKey="board">
               <Nav variant="pills">
                 <Nav.Item>
@@ -31,9 +31,9 @@ const AboutUs = () => {
                   <Card>
                     <Card.Body>
                       <Row>
-                        <h1>Chairman:</h1>
+                        <h2>Chairman:</h2>
                         <p>Garik Tevosyan</p>
-                        <h1>Members:</h1>
+                        <h2>Members:</h2>
                         <p>Sofia Timofijewa</p>
                         <p>Aziz Zakiryarov</p>
                         <p>Snejana Samal</p>

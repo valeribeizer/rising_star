@@ -1,38 +1,42 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap";
+import gymnasts from '../assets/img/contacts_info_img.png';
 
 const Contacts = () => {
-    return (
-      <section className="contacts" id="contacts">
-        <Container>
-          <h1>Contacts</h1>
-          <div className="contacts-bx">
+  return (
+    <section className="contacts" id="contacts">
+      <Container>
+        <h1>Contacts</h1>
+        <div className="contacts-bx">
+          <Row>
+            <Col>
+              <h3>If you want to ask something feel free to get in touch</h3>
+            </Col>
+          </Row>
+          <Row>
+        <Col>
             <Row>
-              <Col>
-                <p>If you want to ask something feel free to get in touch</p>
-              </Col>
+              <h2>Email</h2>
+              <p>rg.risingstar@gmail.com</p>
             </Row>
             <Row>
-              <Col>
-                <h2>Email</h2>
-                <p>rg.risingstar@gmail.com</p>
-              </Col>
-              <Col>
-                <h2>Phone</h2>
-                <p>0739486676</p>
-              </Col>
+              <h2>Phone</h2>
+              <p>073 948 66 76</p>
             </Row>
             <Row>
-              <Col>
-                <h2>Address</h2>
-                <p>c/o Garik Tevosyan</p>
-                <p>Tallskogsränd 9</p>
-                <p>165 76 Hässelby</p>
-              </Col>
+              <h2>Address</h2>
+              <p>c/o Garik Tevosyan</p>
+              <p>Tallskogsränd 9</p>
+              <p>165 76 Hässelby</p>
             </Row>
-          </div>
-        </Container>
-      </section>
-    );
+          </Col>
+          <Col>
+          <img src={gymnasts} alt='gymnasts'/>
+          </Col>
+          </Row>
+        </div>
+      </Container>
+    </section>
+  );
 };
 
 export default Contacts;

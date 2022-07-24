@@ -31,7 +31,7 @@ const  Prices = () => {
           <Row>
             <Col>
               <div className="prices-bx">
-                <p>These prices are valid for autumn term</p>
+                <p1>These prices are valid for autumn term</p1>
                 <Carousel
                   responsive={responsive}
                   infinite={true}

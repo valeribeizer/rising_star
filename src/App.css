@@ -60,7 +60,6 @@ img {
 /* NavBar  CSS  */
 nav.navbar {
   margin-bottom: 50px;
-  /* padding: 18px 0; */
   position: fixed;
   width: 100%;
   top: 0;
@@ -189,18 +188,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   animation: updown 3s linear infinite;
 }
 
-/* @keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-} */
-
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -212,20 +199,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .about h2 {
-  font-size: 45px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.about h5 {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
 }
 
-.about h1 {
-  font-size: 20px;
-  font-weight: 450;
+.about h1 { 
   text-align: center;
 }
 
@@ -356,15 +335,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .member {
   padding-top: 105px;
 }
+
 .member img {
   width: 400px;
   height: 400px;
 }
-.member h2 {
-	font-size: 45px;
-	font-weight: 500;
+
+.member h1 {
   margin-bottom: 30px;
 }
+
 .member form input, .member form textarea {
   width: 100%;
   background: rgba(148, 83, 252, 0.219);
@@ -448,11 +428,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border-radius: 64px;
   text-align: center;
   padding: 40px 50px;
-  margin-top: 50px;
 }
 
 .prices h1 {
 	text-align: center;
+  margin-bottom: 30px;
 }
 
 .prices h2 {
@@ -474,6 +454,14 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     text-align: center;
 }
 
+.prices p1 {
+    color: #892eff;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
 .prices-slider {
   width: 80%;
   margin: auto auto;
@@ -483,8 +471,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .prices .card {
-  width: 250px;
-  
+  width: 250px;  
   background-color: rgb(255 255 255 / 10%);
   border-radius: 50px;  
 }
@@ -540,14 +527,29 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 	font-size: 25px;
 	font-weight: 500;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .contacts p {
-    color: white;
-    font-size: 15px;
+    color: #892eff;
+    font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.0em;
     text-align: center;
+}
+
+.contacts h3 {
+    color: #892eff;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.0em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contacts img {
+  width: 650px;
+  height: 250px;
 }
 
 
