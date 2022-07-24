@@ -37,7 +37,7 @@ const Contacts = () => {
                   <Col
                     className={
                       isVisible
-                        ? "animate__animated animate__rotateIn  animate__slow"
+                        ? "animate__animated animate__fadeIn  animate__slow"
                         : ""
                     }
                   >
