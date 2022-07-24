@@ -5,9 +5,9 @@ import TrackVisibility from "react-on-screen";
 
 const Contacts = () => {
   return (
-    <section className="contacts" id="contacts">
+    <section className="contacts" id="contact">
       <Container>
-        <h1>Contacts</h1>
+        <h1>Contact</h1>
         <div className="contacts-bx">
           <Row>
             <Col>

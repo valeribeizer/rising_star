@@ -17,19 +17,11 @@ const NavBar = () => {
             styles={{ minWidth: 100, minHeight: 100 }}
             src={logo}
             alt="logo"
+            onClick={() => onUpdateActiveLink("home")}
           />
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link
-              href="#home"
-              className={
-                activeLink === "home" ? "active-navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("home")}
-            >
-              Home
-            </Nav.Link>
             <Nav.Link
               href="#aboutus"
               className={
@@ -37,16 +29,16 @@ const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("aboutus")}
             >
-              About Us
+              ABOUT US
             </Nav.Link>
             <Nav.Link
-              href="#prices"
+              href="#pricing"
               className={
-                activeLink === "prices" ? "active-navbar-link" : "navbar-link"
+                activeLink === "pricing" ? "active-navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("prices")}
+              onClick={() => onUpdateActiveLink("pricing")}
             >
-              Prices
+              PRICING
             </Nav.Link>
 
             <Nav.Link
@@ -56,16 +48,16 @@ const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("member")}
             >
-              Become a Member
+              BECOME A MEMBER
             </Nav.Link>
             <Nav.Link
-              href="#contacts"
+              href="#contact"
               className={
-                activeLink === "contacts" ? "active-navbar-link" : "navbar-link"
+                activeLink === "contact" ? "active-navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("contacts")}
             >
-              Contacs
+              CONTACT
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

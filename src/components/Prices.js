@@ -25,9 +25,9 @@ const  Prices = () => {
   };
 
     return (
-      <section className="prices" id="prices">
+      <section className="prices" id="pricing">
         <Container>
-          <h1>Prices</h1>
+          <h1>Pricing</h1>
           <Row>
             <Col>
               <div className="prices-bx">
