@@ -62,7 +62,9 @@ const Member = () => {
               {({ isVisible }) => (
                 <img
                   className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
+                    isVisible
+                      ? "animate__animated animate__bounce animate__slower"
+                      : ""
                   }
                   src={contactImg}
                   alt="Contact Us"
@@ -71,13 +73,6 @@ const Member = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
                   <h1>Become a Member</h1>
                   <form onSubmit={sendEmail}>
                     <Row>
@@ -141,9 +136,6 @@ const Member = () => {
                       </Col>
                     </Row>
                   </form>
-                </div>
-              )}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>
