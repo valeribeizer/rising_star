@@ -78,11 +78,11 @@ nav.navbar {
 }
 
 nav.navbar a.navbar-brand {
-  width: 15%;
+  width: 13%;
 }
 
 nav.navbar a.navbar-brand img {
-  width: 80px;
+  width: 60px;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
