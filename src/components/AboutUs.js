@@ -15,7 +15,7 @@ const AboutUs = () => {
         <Row>
           <Col>
             <h1>About Us</h1>
-            <h2>Our club was founded in 2022 year</h2>
+            <h2>Our club was founded in 2022</h2>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "" : ""}>

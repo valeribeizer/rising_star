@@ -43,28 +43,28 @@ const  Prices = () => {
                 >
                   <div className="card">
                     <h4>Membership fee</h4>
-                    <p>250 kronas per year</p>
+                    <p>250 SEK per year</p>
                   </div>
                   <div className="card">
                     <h4>Beginners</h4>
                     <h5>1 time a week:</h5>
-                    <p>1600 kronas</p>
+                    <p>1600 SEK</p>
                     <h5>2 times a week:</h5>
-                    <p>2500 kronas</p>
+                    <p>2500 SEK</p>
                   </div>
                   <div className="card">
                     <h4>Intermediate level</h4>
                     <h5>1 time a week:</h5>
-                    <p>1800 kronas</p>
+                    <p>1800 SEK</p>
                     <h5>2 times a week:</h5>
-                    <p>2700 kronas</p>
+                    <p>2700 SEK</p>
                     <h5>3 times a week:</h5>
-                    <p>3500 kronas*</p>
+                    <p>3500 SEK*</p>
                   </div>
                   <div className="card">
                     <h4>Stretching for adults</h4>
                     <h5>1 class:</h5>
-                    <p>150 kronas</p>
+                    <p>150 SEK</p>
                   </div>
                 </Carousel>
                 <h5>
@@ -72,7 +72,7 @@ const  Prices = () => {
                   week without additional fees.
                 </h5>
                 <h5>
-                  Also you get discount 10% if more than 1 girl does gymnastics
+                  Also you get 10% discount if more than 1 girl does gymnastics
                   in our club.
                 </h5>
               </div>
