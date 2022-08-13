@@ -299,13 +299,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about .nav.nav-pills .nav-item {
   width: 33.33333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .about .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
-  padding: 17px 0;
+  padding: 17px 0; 
   color: black;
   width: 100%;
   font-size: 17px;

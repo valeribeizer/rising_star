@@ -21,15 +21,15 @@ const AboutUs = () => {
                 <div className={isVisible ? "" : ""}>
                   <Tab.Container id="aboutUs-tabs" defaultActiveKey="board">
                     <Nav variant="pills">
-                      <Nav.Item>
-                        <Nav.Link eventKey="board">Board</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="values">Core values</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="statute">Statute</Nav.Link>
-                      </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link eventKey="board">Board</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link eventKey="values">Values</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link eventKey="statute">Statute</Nav.Link>
+                        </Nav.Item>
                     </Nav>
                     <Tab.Content
                       id="fadeIn"
@@ -94,7 +94,7 @@ const AboutUs = () => {
                                   : ""
                               }
                             >
-                              <div className='centered'>
+                              <div className="centered">
                                 <button
                                   className="btn btn-default"
                                   onClick={buttonClicked}
