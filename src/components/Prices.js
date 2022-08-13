@@ -37,13 +37,13 @@ const  Prices = () => {
                   infinite={true}
                   className="prices-slider"
                   containerClass="carousel-container"
-                  removeArrowOnDeviceType={["tablet", "mobile"]}
                   customRightArrow={<CustomRightArrow />}
                   customLeftArrow={<CustomLeftArrow />}
                 >
                   <div className="card">
                     <h4>Membership fee</h4>
-                    <p>250 SEK per year</p>
+                    <p>250 SEK</p>
+                    
                   </div>
                   <div className="card">
                     <h4>Beginners</h4>

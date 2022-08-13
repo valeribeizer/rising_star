@@ -530,7 +530,7 @@ margin-top: 20px;
     color: #892eff;
     font-size: 18px;
     letter-spacing: 0.8px;
-    line-height: 1.5em;
+    line-height: 1.0em;
     text-align: center;
 }
 
@@ -554,6 +554,7 @@ margin-top: 20px;
   width: auto;  
   background-color: rgb(255 255 255 / 10%);
   border-radius: 50px;  
+  margin-right: 40px;
 }
 
 /* Arrows CSS */
