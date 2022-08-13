@@ -57,6 +57,7 @@ const Member = () => {
     <section className="member" id="member">
       <Container>
         <Row className="align-items-center">
+          <h1>Become a Member</h1>
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
@@ -73,69 +74,59 @@ const Member = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-                  <h1>Become a Member</h1>
-                  <form onSubmit={sendEmail}>
-                    <Row>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          type="text"
-                          placeholder="First Name*"
-                          name="firstName"
-                          value={formDetails.firstName}
-                          onChange={(e) =>
-                            onFormUpdate("firstName", e.target.value)
-                          }
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          type="text"
-                          placeholder="Last Name"
-                          value={formDetails.lastName}
-                          name="lastName"
-                          onChange={(e) =>
-                            onFormUpdate("lastName", e.target.value)
-                          }
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          type="email"
-                          placeholder="Email Address*"
-                          value={formDetails.email}
-                          name="email"
-                          onChange={(e) =>
-                            onFormUpdate("email", e.target.value)
-                          }
-                        />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          type="tel"
-                          placeholder="Phone No.*"
-                          value={formDetails.phone}
-                          name="phone"
-                          onChange={(e) =>
-                            onFormUpdate("phone", e.target.value)
-                          }
-                        />
-                      </Col>
-                      <Col size={12} className="px-1">
-                        <textarea
-                          rows="6"
-                          placeholder="Message*"
-                          value={formDetails.message}
-                          name="message"
-                          onChange={(e) =>
-                            onFormUpdate("message", e.target.value)
-                          }
-                        ></textarea>
-                        <button type="submit">
-                          <span>{buttonText}</span>
-                        </button>
-                      </Col>
-                    </Row>
-                  </form>
+            {/* <h1>Become a Member</h1> */}
+            <form onSubmit={sendEmail}>
+              <Row>
+                <Col size={12} sm={6} className="px-1">
+                  <input
+                    type="text"
+                    placeholder="First Name*"
+                    name="firstName"
+                    value={formDetails.firstName}
+                    onChange={(e) => onFormUpdate("firstName", e.target.value)}
+                  />
+                </Col>
+                <Col size={12} sm={6} className="px-1">
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    value={formDetails.lastName}
+                    name="lastName"
+                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
+                  />
+                </Col>
+                <Col size={12} sm={6} className="px-1">
+                  <input
+                    type="email"
+                    placeholder="Email Address*"
+                    value={formDetails.email}
+                    name="email"
+                    onChange={(e) => onFormUpdate("email", e.target.value)}
+                  />
+                </Col>
+                <Col size={12} sm={6} className="px-1">
+                  <input
+                    type="tel"
+                    placeholder="Phone No.*"
+                    value={formDetails.phone}
+                    name="phone"
+                    onChange={(e) => onFormUpdate("phone", e.target.value)}
+                  />
+                </Col>
+                <Col size={12} className="px-1">
+                  <textarea
+                    rows="6"
+                    placeholder="Message*"
+                    value={formDetails.message}
+                    name="message"
+                    onChange={(e) => onFormUpdate("message", e.target.value)}
+                  ></textarea>
+                  <button type="submit">
+                    <span>{buttonText}</span>
+                  </button>
+                </Col>
+              </Row>
+            </form>
           </Col>
         </Row>
       </Container>

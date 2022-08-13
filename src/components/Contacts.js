@@ -18,7 +18,7 @@ const Contacts = () => {
             {({ isVisible }) => (
               <div className={isVisible ? "" : ""}>
                 <Row>
-                  <Col>
+                  <Col size={12} md={6}>
                     <Row>
                       <h2>Email</h2>
                       <p>rg.risingstar@gmail.com</p>
@@ -35,6 +35,8 @@ const Contacts = () => {
                     </Row>
                   </Col>
                   <Col
+                    size={12}
+                    md={6}
                     className={
                       isVisible
                         ? "animate__animated animate__fadeIn  animate__slow"

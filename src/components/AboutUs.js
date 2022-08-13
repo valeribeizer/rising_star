@@ -18,13 +18,7 @@ const AboutUs = () => {
             <h2>Our club was founded in 2022 year</h2>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible
-                      ? ""
-                      : ""
-                  }
-                >
+                <div className={isVisible ? "" : ""}>
                   <Tab.Container id="aboutUs-tabs" defaultActiveKey="board">
                     <Nav variant="pills">
                       <Nav.Item>
@@ -93,15 +87,21 @@ const AboutUs = () => {
                         <Card>
                           <Card.Body>
                             <Row
+                              class="col-md-12 text-center"
                               className={
                                 isVisible
                                   ? "animate__animated animate__fadeIn animate__delay-1s"
                                   : ""
                               }
                             >
-                              <button onClick={buttonClicked}>
-                                Click here!
-                              </button>
+                              <div className='centered'>
+                                <button
+                                  className="btn btn-default"
+                                  onClick={buttonClicked}
+                                >
+                                  Click here!
+                                </button>
+                              </div>
                             </Row>
                           </Card.Body>
                         </Card>

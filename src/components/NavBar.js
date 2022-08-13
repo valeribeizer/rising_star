@@ -10,18 +10,14 @@ const NavBar = () => {
     };
 
   return (
-    <Navbar expand="lg">
+    <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img
-            styles={{ minWidth: 100, minHeight: 100 }}
-            src={logo}
-            alt="logo"
-            onClick={() => onUpdateActiveLink("home")}
-          />
+          <img src={logo} alt="logo" />
         </Navbar.Brand>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
             <Nav.Link
               href="#aboutus"
               className={
@@ -40,7 +36,6 @@ const NavBar = () => {
             >
               PRICING
             </Nav.Link>
-
             <Nav.Link
               href="#member"
               className={

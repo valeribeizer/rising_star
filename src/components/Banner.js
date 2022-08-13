@@ -40,7 +40,7 @@ const Banner = () => {
         <Row className="align-item-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              { ({ isVisible }) =>
+              {({ isVisible }) => (
                 <div
                   className={
                     isVisible ? "animate__animated animate_fadeIn" : ""
@@ -60,7 +60,7 @@ const Banner = () => {
                   </p>
                   <button onClick={scrollToSection}>Become a member</button>
                 </div>
-              }
+              )}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
