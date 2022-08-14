@@ -217,8 +217,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h1 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom:10px;
+  display: block;
+}
+
+.banner h2 {
+  font-size: 50px;
+  font-weight: 600;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 30px;
@@ -283,12 +292,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: rgba(148, 83, 252, 0.219);
   border-radius: 50px;
   border: none;
-  width: 72%;
   margin: 0 auto;
 }
 
 .about .nav.nav-pills {
-  width: 72%;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -298,7 +305,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;

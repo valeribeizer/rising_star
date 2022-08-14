@@ -47,10 +47,10 @@ const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to our page</span>
-                  <h1>
-                    {`Gymnastics club `}
+                  <h1>{`Gymnastics club `}</h1>
+                  <h2>
                     <span className="wrap">{text}</span>
-                  </h1>
+                  </h2>
                   <p>
                     Gymnastics club "Rising Star" has the task of providing
                     gymnastics for children, youth and adults, men and women.

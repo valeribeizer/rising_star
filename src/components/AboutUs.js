@@ -19,17 +19,20 @@ const AboutUs = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "" : ""}>
-                  <Tab.Container id="aboutUs-tabs" defaultActiveKey="board">
+                  <Tab.Container id="aboutUs-tabs" defaultActiveKey="locations">
                     <Nav variant="pills">
-                        <Nav.Item>
-                          <Nav.Link eventKey="board">Board</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="values">Values</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="statute">Statute</Nav.Link>
-                        </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="locations">Locations</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="board">Board</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="values">Values</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="statute">Statute</Nav.Link>
+                      </Nav.Item>
                     </Nav>
                     <Tab.Content
                       id="fadeIn"
@@ -39,6 +42,26 @@ const AboutUs = () => {
                           : ""
                       }
                     >
+                      <Tab.Pane eventKey="locations">
+                        <Card>
+                          <Card.Body>
+                            <Row
+                              className={
+                                isVisible
+                                  ? "animate__animated animate__fadeIn animate__delay-1s"
+                                  : ""
+                              }
+                            >
+                              <h2>We are located in:</h2>
+                              <p>Husbygårdsskolan</p>
+                              <p>Gullingeskolan</p>
+                              <p>Solbergaskolan</p>
+                              <p>Sofia Skola</p>
+                              <p>Hjorthagshallen</p>
+                            </Row>
+                          </Card.Body>
+                        </Card>
+                      </Tab.Pane>
                       <Tab.Pane eventKey="board">
                         <Card>
                           <Card.Body>
