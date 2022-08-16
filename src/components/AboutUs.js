@@ -122,7 +122,7 @@ const AboutUs = () => {
                                   className="btn btn-default"
                                   onClick={buttonClicked}
                                 >
-                                  Click here!
+                                  Click for view document in Google.Docs!
                                 </button>
                               </div>
                             </Row>

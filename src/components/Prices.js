@@ -31,7 +31,7 @@ const  Prices = () => {
           <Row>
             <Col>
               <div className="prices-bx">
-                <p1>These prices are valid for autumn term</p1>
+                <p1>These prices are valid for autumn term (2022-08-22 to 2022-12-24)</p1>
                 <Carousel
                   responsive={responsive}
                   infinite={true}
@@ -72,7 +72,7 @@ const  Prices = () => {
                   week without additional fees.
                 </h5>
                 <h5>
-                  Also you get 10% discount if more than 1 girl does gymnastics
+                  Also you get 10% discount for every additional membership
                   in our club.
                 </h5>
               </div>

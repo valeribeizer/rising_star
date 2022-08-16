@@ -46,7 +46,7 @@ const Banner = () => {
                     isVisible ? "animate__animated animate_fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to our page</span>
+                  {/* <span className="tagline">Welcome to our page</span> */}
                   <h1>{`Gymnastics club `}</h1>
                   <h2>
                     <span className="wrap">{text}</span>
