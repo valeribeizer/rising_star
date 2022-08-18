@@ -36,7 +36,11 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background: linear-gradient(90.21deg, #ffd6ef -5.91%,    #7ab3fd 111.58%) !important;
+  background: linear-gradient(
+    90.21deg,
+    #ffd6ef -5.91%,
+    #7ab3fd 111.58%
+  ) !important;
   color: rgb(0, 0, 0) !important;
   font-family: "Centra", sans-serif !important;
 }
@@ -55,17 +59,14 @@ h6 {
 img {
   width: 100%;
   height: auto;
-} 
-
-
-
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
 }
 
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
 
 /* NavBar  CSS  */
 nav.navbar {
@@ -74,7 +75,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
-  background: linear-gradient(90.21deg, #7ab3fd  -5.91%,     #ffd6ef 111.58%);
+  background: linear-gradient(90.21deg, #7ab3fd -5.91%, #ffd6ef 111.58%);
 }
 
 nav.navbar a.navbar-brand {
@@ -106,9 +107,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
-	position: relative;
-	background-color: transparent;
-	transition: 0.3s ease-in-out;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar-text button span {
@@ -132,16 +133,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .navbar-text button:hover::before {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
-} 
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
-	outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 nav.navbar .navbar-toggler-icon {
@@ -155,40 +156,40 @@ nav.navbar .navbar-toggler-icon {
 }
 
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid rgb(83, 83, 83);
+  border-bottom: 2px solid rgb(83, 83, 83);
 }
 
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
-	width: 24px;
-	position: absolute;
-	height: 2px;
-	background-color: rgb(83, 83, 83);
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: 2;
-	transition: all 300ms linear;
+  width: 24px;
+  position: absolute;
+  height: 2px;
+  background-color: rgb(83, 83, 83);
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
+  transition: all 300ms linear;
 }
 
 nav.navbar .navbar-toggler-icon:after {
-	top: 8px;
+  top: 8px;
 }
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
-	background-color: rgb(83, 83, 83);
-	height: 2px;
+  transform: rotate(45deg);
+  background-color: rgb(83, 83, 83);
+  height: 2px;
 }
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(8px) rotate(-45deg);
-	background-color: rgb(83, 83, 83);
-	height: 2px;
+  transform: translateY(8px) rotate(-45deg);
+  background-color: rgb(83, 83, 83);
+  height: 2px;
 }
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
+  border-color: transparent;
 }
 
 /*Banner CSS */
@@ -221,7 +222,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 600;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   display: block;
 }
 
@@ -274,7 +275,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
-.about h1 { 
+.about h1 {
   text-align: center;
 }
 
@@ -309,13 +310,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .about .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
-  padding: 17px 0; 
+  padding: 17px 0;
   color: black;
   width: 100%;
   font-size: 17px;
@@ -371,7 +371,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     rgba(74, 47, 189, 0.5) 111.58%
   );
   border-color: transparent;
-  width: auto; 
+  width: auto;
   font-size: 18px;
   margin-top: auto;
   border-radius: 20px;
@@ -391,7 +391,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   content: "";
   background: linear-gradient(
     90.21deg,
-      rgba(74, 47, 189, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) -5.91%,
     rgba(170, 54, 124, 0.5) 111.58%
   );
   width: 0;
@@ -419,7 +419,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-right: auto;
   margin-bottom: 20px;
   width: 60%;
-  
 }
 
 .member h1 {
@@ -427,7 +426,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
-.member form input, .member form textarea {
+.member form input,
+.member form textarea {
   width: 100%;
   background: rgba(148, 83, 252, 0.219);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -441,18 +441,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
-.member form input:focus, .member form textarea:focus {
+.member form input:focus,
+.member form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
 
-.member form input::placeholder, .member form textarea::placeholder {
+.member form input::placeholder,
+.member form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
 
-.member form input:focus::placeholder, .member form textarea:focus::placeholder {
+.member form input:focus::placeholder,
+.member form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
 }
@@ -488,7 +491,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   content: "";
   background: linear-gradient(
     90.21deg,
-      rgba(74, 47, 189, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) -5.91%,
     rgba(170, 54, 124, 0.5) 111.58%
   );
   width: 0;
@@ -518,39 +521,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .prices h1 {
-	text-align: center;
+  text-align: center;
   margin-bottom: 30px;
 }
 
 .prices h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .prices h4 {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .prices h5 {
-	font-size: 20px;
-	font-weight: 500;
-  line-height: 1.0em;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1em;
 }
 
 .prices p {
-    color: #892eff;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.0em;
-    text-align: center;
+  color: #892eff;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1em;
+  text-align: center;
 }
 
 .prices p1 {
-    color: #892eff;
-    font-size: 20px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    text-align: center;
+  color: #892eff;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 .prices-slider {
@@ -562,9 +565,9 @@ margin-top: 20px;
 }
 
 .prices .card {
-  width: auto;  
+  width: auto;
   background-color: rgb(255 255 255 / 10%);
-  border-radius: 50px;  
+  border-radius: 50px;
   margin-right: 40px;
 }
 
@@ -606,7 +609,7 @@ margin-top: 20px;
   border-radius: 64px;
   text-align: center;
   padding: 20px 50px;
-  margin-top: 30px;;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
@@ -615,41 +618,40 @@ margin-top: 20px;
 }
 
 .contacts h2 {
-	font-size: 25px;
-	font-weight: 500;
+  font-size: 25px;
+  font-weight: 500;
   text-align: center;
   padding-bottom: 5px;
 }
 
 .contacts p {
-    color: #892eff;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.0em;
-    text-align: center;
+  color: #892eff;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1em;
+  text-align: center;
 }
 
 .contacts h3 {
-    color: #892eff;
-    font-size: 20px;
-    letter-spacing: 0.8px;
-    line-height: 1.0em;
-    text-align: center;
-    padding-bottom: 20px;
+  color: #892eff;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1em;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .contacts img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%
+  width: 100%;
 }
 
-
 /* Footer CSS */
- .footer {
+.footer {
   height: 100px;
- }
+}
 
 .footer p {
   font-weight: 400;
@@ -657,58 +659,48 @@ margin-top: 20px;
   color: #ffd6ef;
   letter-spacing: 0.5px;
   margin-top: 10px;
-} 
+}
 
-  .social-icon {
-    display: inline-block;
-    margin-left: 14px;
-    margin-top: 25px;
+.social-icon {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 25px;
 }
 
 .social-icon img {
-    width: 40px;
-    height: 20px;
+  width: 20%;
+  height: auto;
 }
 
 .social-icon a {
-    width: 42px;
-    height: 42px;
-    background: rgba(255, 255, 255, 0.1);
-    display: inline-flex;
-    border-radius: 50%;
-    margin-right: 15px;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 20%;
+  height: auto;
+  display: inline-flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icon a::before {
-    content: "";
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
-  );
-    border-radius: 50%;
-    transform: scale(0);
-	transition: 0.3s ease-in-out;
+  content: "";
+  width: 20%;
+  height: auto;
+  position: absolute;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
 }
 
 .social-icon a:hover::before {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .social-icon a img {
-	width: 40%;
-	z-index: 1;
-	transition: 0.3s ease-in-out;
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
-} 
-
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
+}

@@ -16,7 +16,7 @@ const Footer = () => {
                   <img src={footerIcon2} alt='facebook' />
                 </a>
               </div>
-              <p>CopyRight 2022. All Right Reserved</p>
+              <p>Copyright 2022. All Rights Reserved</p>
             </Col>
           </Row>
         </Container>

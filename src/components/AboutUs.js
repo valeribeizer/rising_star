@@ -5,7 +5,7 @@ import TrackVisibility from "react-on-screen";
 const AboutUs = () => {
   const buttonClicked = () => {
     const url =
-      "https://drive.google.com/file/d/1K0iqY3V7CjfHwNzqi2a_UkFsEahrRnzV/view?usp=sharing";
+      "https://drive.google.com/file/d/1B73xSG3sv6Nvmv7M0LMVtFKgqsuAA_7E/view?usp=sharing";
     window.open(url, '_blank');
 }
 

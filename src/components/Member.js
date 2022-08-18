@@ -1,8 +1,10 @@
+import React from "react";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import contactImg from "../assets/img/contact_img.png";
 import emailjs from "emailjs-com";
+import { Checkbox } from "@progress/kendo-react-inputs";
 
 const Member = () => {
   const formInitialDetails = {
@@ -13,8 +15,14 @@ const Member = () => {
     message: "",
   };
 
+  const checkboxTermsAndConditionsMessage = React.useMemo(
+    () => "Please indicate that you accept the Terms and Conditions",
+    []
+  );
+
   const [buttonText, setButtonText] = useState("Send");
   const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [isChecked, setIsChecked] = useState(false);
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -29,7 +37,8 @@ const Member = () => {
       formDetails.firstName.length !== 0 &&
       formDetails.email.length !== 0 &&
       formDetails.phone.length !== 0 &&
-      formDetails.message.length !== 0
+      formDetails.message.length !== 0 &&
+      isChecked
     ) {
       emailjs
         .sendForm(
@@ -74,7 +83,6 @@ const Member = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-            {/* <h1>Become a Member</h1> */}
             <form onSubmit={sendEmail}>
               <Row>
                 <Col size={12} sm={6} className="px-1">
@@ -121,6 +129,32 @@ const Member = () => {
                     name="message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   ></textarea>
+                  <div>
+                    <Checkbox
+                      id="ch1"
+                      name="checkbox"
+                      required={true}
+                      validationMessage={checkboxTermsAndConditionsMessage}
+                      checked={isChecked}
+                      onChange={() => setIsChecked((prev) => !prev)}
+                    >
+                      <label
+                        className="k-checkbox-label"
+                        style={{
+                          display: "inline-block",
+                          paddingLeft: "10px",
+                          fontSize: "14px",
+                        }}
+                        for="ch1"
+                      >
+                        By clicking you agree to our{" "}
+                        <a href="https://drive.google.com/file/d/1fGGo0IA23P43TwUKKcPjZCylH6Oq_YKv/view?usp=sharing">
+                          Terms and Conditions
+                        </a>
+                        .
+                      </label>
+                    </Checkbox>
+                  </div>
                   <button type="submit">
                     <span>{buttonText}</span>
                   </button>
