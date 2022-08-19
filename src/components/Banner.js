@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { scroller } from "react-scroll";
-import bannerImg from '../assets/img/banner_img1.png';
-import  'animate.css';
+import bannerImg from "../assets/img/banner_img1.png";
+import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 const Banner = () => {
@@ -19,20 +19,20 @@ const Banner = () => {
     });
   };
 
+  const tick = () => {
+    let updatedText = toRotate.substring(0, text.length + 1);
+    setText(updatedText);
+  };
+
   useEffect(() => {
-      let  ticker = setInterval(() => {
-          tick();
-      }, period)
+    let ticker = setInterval(() => {
+      tick();
+    }, period);
 
-      return () => {
-          clearInterval(ticker);
-      }
+    return () => {
+      clearInterval(ticker);
+    };
   }, [text]);
-
-     const tick = () => {
-       let updatedText = toRotate.substring(0, text.length + 1);
-       setText(updatedText);
-     };
 
   return (
     <section className="banner" id="home">
@@ -46,7 +46,6 @@ const Banner = () => {
                     isVisible ? "animate__animated animate_fadeIn" : ""
                   }
                 >
-                  {/* <span className="tagline">Welcome to our page</span> */}
                   <h1>{`Gymnastics club `}</h1>
                   <h2>
                     <span className="wrap">{text}</span>

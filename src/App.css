@@ -668,12 +668,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .social-icon img {
-  width: 20%;
+  width: 30px;
   height: auto;
 }
 
 .social-icon a {
-  width: 20%;
+  width: 30px;
   height: auto;
   display: inline-flex;
   margin-right: 10px;
@@ -683,7 +683,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .social-icon a::before {
   content: "";
-  width: 20%;
+  width: 30px;
   height: auto;
   position: absolute;
   transform: scale(0);
@@ -695,7 +695,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .social-icon a img {
-  width: 40%;
+  width: 30px;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
