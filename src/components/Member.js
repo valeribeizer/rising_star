@@ -129,32 +129,32 @@ const Member = () => {
                     name="message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   ></textarea>
-                  <div>
+                  <Col size={12} sm={6} className="px-1">
                     <Checkbox
-                      id="ch1"
-                      name="checkbox"
-                      required={true}
-                      validationMessage={checkboxTermsAndConditionsMessage}
-                      checked={isChecked}
-                      onChange={() => setIsChecked((prev) => !prev)}
-                    >
-                      <label
-                        className="k-checkbox-label"
-                        style={{
-                          display: "inline-block",
-                          paddingLeft: "10px",
-                          fontSize: "14px",
-                        }}
-                        for="ch1"
+                        id="ch1"
+                        name="checkbox"
+                        required={true}
+                        validationMessage={checkboxTermsAndConditionsMessage}
+                        checked={isChecked}
+                        onChange={() => setIsChecked((prev) => !prev)}
                       >
-                        By clicking you agree to our{" "}
-                        <a href="https://drive.google.com/file/d/1fGGo0IA23P43TwUKKcPjZCylH6Oq_YKv/view?usp=sharing">
-                          Terms and Conditions
-                        </a>
-                        .
-                      </label>
-                    </Checkbox>
-                  </div>
+                        <label
+                          className="k-checkbox-label"
+                          style={{
+                            display: "inline-block",
+                            paddingLeft: "10px",
+                            fontSize: "14px",
+                          }}
+                          for="ch1"
+                        >
+                          By clicking you agree to our{" "}
+                          <a href="https://drive.google.com/file/d/1fGGo0IA23P43TwUKKcPjZCylH6Oq_YKv/view?usp=sharing">
+                            Terms and Conditions
+                          </a>
+                          .
+                        </label>
+                      </Checkbox>
+                  </Col>
                   <button type="submit">
                     <span>{buttonText}</span>
                   </button>

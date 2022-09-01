@@ -31,7 +31,10 @@ const  Prices = () => {
           <Row>
             <Col>
               <div className="prices-bx">
-                <p1>These prices are valid for autumn term (2022-08-22 to 2022-12-24)</p1>
+                <p1>
+                  These prices are valid for autumn term (2022-08-22 to
+                  2022-12-24)
+                </p1>
                 <Carousel
                   responsive={responsive}
                   infinite={true}
@@ -43,7 +46,6 @@ const  Prices = () => {
                   <div className="card">
                     <h4>Membership fee</h4>
                     <p>250 SEK</p>
-                    
                   </div>
                   <div className="card">
                     <h4>Beginners</h4>
@@ -64,7 +66,9 @@ const  Prices = () => {
                   <div className="card">
                     <h4>Stretching(adults)</h4>
                     <h5>1 class:</h5>
-                    <p>150 SEK</p>
+                    <p>100 SEK</p>
+                    <h5>1 time a week:</h5>
+                    <p>1300 SEK/termin</p>
                   </div>
                 </Carousel>
                 <h5>
@@ -72,8 +76,8 @@ const  Prices = () => {
                   week without additional fees.
                 </h5>
                 <h5>
-                  Also you get 10% discount for every additional membership
-                  in our club.
+                  Also you get 10% discount for every additional membership in
+                  our club.
                 </h5>
               </div>
             </Col>
