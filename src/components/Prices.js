@@ -65,7 +65,6 @@ const  Prices = () => {
                   </div>
                   <div className="card">
                     <h4>Stretching</h4>
-                    <h4>(adults)</h4>
                     <h5>1 class:</h5>
                     <p>100 SEK</p>
                     <h5>1 time a week:</h5>
