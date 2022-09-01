@@ -64,11 +64,12 @@ const  Prices = () => {
                     <p>3500 SEK*</p>
                   </div>
                   <div className="card">
-                    <h4>Stretching(adults)</h4>
+                    <h4>Stretching</h4>
+                    <h4>(adults)</h4>
                     <h5>1 class:</h5>
                     <p>100 SEK</p>
                     <h5>1 time a week:</h5>
-                    <p>1300 SEK/termin</p>
+                    <p>1300 SEK</p>
                   </div>
                 </Carousel>
                 <h5>
