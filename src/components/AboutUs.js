@@ -78,11 +78,11 @@ const gullingeskolan = () => {
                               }
                             >
                               <h2>We are located in:</h2>
-                              <p onClick={husbygardsskolan}>Husbygårdsskolan</p>
-                              <p onClick={gullingeskolan}>Gullingeskolan</p>
-                              <p onClick={solbergaskolan}>Solbergaskolan</p>
-                              <p onClick={sofiaskola}>Sofia Skola</p>
-                              <p onClick={hjorthagshallen}>Hjorthagshallen</p>
+                              <p1 onClick={husbygardsskolan}>Husbygårdsskolan</p1>
+                              <p1 onClick={gullingeskolan}>Gullingeskolan</p1>
+                              <p1 onClick={solbergaskolan}>Solbergaskolan</p1>
+                              <p1 onClick={sofiaskola}>Sofia Skola</p1>
+                              <p1 onClick={hjorthagshallen}>Hjorthagshallen</p1>
                             </Row>
                           </Card.Body>
                         </Card>

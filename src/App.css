@@ -287,6 +287,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 5px auto 10px auto;
   text-align: justify;
   width: 80%;
+}
+
+.about p1 {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 5px auto 10px auto;
+  text-align: justify;
+  width: 80%;
   text-decoration: underline;
 }
 
