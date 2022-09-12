@@ -9,6 +9,31 @@ const AboutUs = () => {
     window.open(url, '_blank');
 }
 
+const hjorthagshallen = () => {
+  const url = "https://goo.gl/maps/wCxeYcXB5TssFLpt5";
+  window.open(url, '_blank');
+};
+
+const sofiaskola = () => {
+  const url = "https://goo.gl/maps/QT4vumJjwxAdG9BU7";
+  window.open(url, "_blank");
+};
+
+const solbergaskolan = () => {
+  const url = "https://goo.gl/maps/XYxeP7MFPq2KeDni7";
+  window.open(url, "_blank");
+};
+
+const husbygardsskolan = () => {
+  const url = "https://goo.gl/maps/MevDoJUR94XPXWqK9";
+  window.open(url, "_blank");
+};
+
+const gullingeskolan = () => {
+  const url = "https://goo.gl/maps/8N7JhE8Cn9oKV2i8A";
+  window.open(url, "_blank");
+};
+
   return (
     <section className="about" id="aboutus">
       <Container>
@@ -53,11 +78,11 @@ const AboutUs = () => {
                               }
                             >
                               <h2>We are located in:</h2>
-                              <p>Husbygårdsskolan</p>
-                              <p>Gullingeskolan</p>
-                              <p>Solbergaskolan</p>
-                              <p>Sofia Skola</p>
-                              <p>Hjorthagshallen</p>
+                              <p onClick={husbygardsskolan}>Husbygårdsskolan</p>
+                              <p onClick={gullingeskolan}>Gullingeskolan</p>
+                              <p onClick={solbergaskolan}>Solbergaskolan</p>
+                              <p onClick={sofiaskola}>Sofia Skola</p>
+                              <p onClick={hjorthagshallen}>Hjorthagshallen</p>
                             </Row>
                           </Card.Body>
                         </Card>
