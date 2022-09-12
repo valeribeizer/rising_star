@@ -69,6 +69,8 @@ const  Prices = () => {
                     <p>100 SEK</p>
                     <h5>1 time a week:</h5>
                     <p>1300 SEK</p>
+                    <h5>2 times a week:</h5>
+                    <p>2500 SEK</p>
                   </div>
                 </Carousel>
                 <h5>
