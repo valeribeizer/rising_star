@@ -33,7 +33,7 @@ const  Prices = () => {
               <div className="prices-bx">
                 <p1>
                   These prices are valid for autumn term (2022-08-22 to
-                  2022-12-24)
+                  2022-12-17)
                 </p1>
                 <Carousel
                   responsive={responsive}
